@@ -1,0 +1,39 @@
+{
+    "name": "curlychoi/laravel-sitemap",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "curlychoi",
+            "email": "curlychoi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Curlychoi\\LaravelSitemap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Curlychoi\\LaravelSitemap\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Curlychoi\\LaravelSitemap\\Providers\\SitemapServiceProvider"
+            ],
+            "aliases": {
+                "Sitemap": "Curlychoi\\LaravelSitemap\\Facades\\Sitemap"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    }
+}
