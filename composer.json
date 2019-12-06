@@ -1,6 +1,6 @@
 {
     "name": "curlychoi/laravel-sitemap",
-    "description": "",
+    "description": "Sitemap management package using laravel facede",
     "type": "library",
     "license": "MIT",
     "authors": [
